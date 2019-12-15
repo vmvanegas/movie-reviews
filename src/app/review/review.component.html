@@ -1,0 +1,17 @@
+<div class="content-img">
+  <div class="tag-mpaa-rating">
+    <h3>Critics pick: "{{review.critics_pick}}"</h3>
+  </div>
+  <img src={{review.multimedia.src}} (click)="onDetails(review)">
+</div>
+<div class="card-header">
+  <h2>{{review.display_title}}</h2>
+  <span>{{review.byline}} - {{review.publication_date}}</span>
+</div>
+<hr>
+<div class="card-content">
+  <p>{{review.headline}}</p>
+</div>
+<div class="card-actions">
+  <button (click)="onDetails(review)">Details</button>
+</div>

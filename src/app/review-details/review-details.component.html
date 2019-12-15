@@ -1,0 +1,26 @@
+<div class="details-container" *ngIf="review">
+  <div class="details-img">
+    <img src={{review.multimedia.src}}>
+  </div>
+  <div class="details-header">
+    <div>
+      <h1>{{review.display_title}}</h1>
+      <span>{{review.byline}} - {{review.publication_date}}</span>
+    </div>
+  </div>
+  <hr>
+  <div class="details-content">
+    <h2>{{review.headline}}</h2>
+    <p>{{review.summary_short}}</p>
+    <ul class="details-list">
+      <li>Movie MPAA rating: {{review.mpaa_rating}}</li>
+      <li>Critics Pick: {{review.critics_pick}}</li>
+      <li>Movie U.S. opening date.: {{review.opening_date}}</li>
+      <li>Last modified date of the review: {{review.date_updated}}</li>
+    </ul>
+  </div>
+  <div class="details-actions">
+    <a href={{review.link.url}} target="_blank">{{review.link.suggested_link_text}}</a>
+    <button class="btn-back" [routerLink]="['/reviews']">&larr; Back</button>
+  </div>
+</div>

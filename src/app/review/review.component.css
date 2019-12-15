@@ -1,0 +1,46 @@
+.content-img {
+  position: relative;
+}
+
+.content-img .tag-mpaa-rating{
+  right: 0;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  background-color: #42c4ac9a;
+  border-width: solid 0px 15px 15px 15px;
+  overflow: hidden;
+}
+
+.content-img img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-header, .card-content, .card-actions{
+  padding: 10px;
+}
+
+.card hr {
+  border: 1px solid #cecece; 
+}
+
+.card-header span {
+  color: #818181;
+}
+
+.card-content p {
+  color: #414141;
+}
+
+.card-actions button {
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px){
+  .content-img .tag-mpaa-rating{
+    padding: 10px;
+  }
+}
